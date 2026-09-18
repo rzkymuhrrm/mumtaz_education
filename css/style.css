@@ -1023,6 +1023,7 @@ ul {
 }
 
 .register-image {
+    background-color: white;
     width: 50%;
     max-width: 550px;
     overflow: hidden;
