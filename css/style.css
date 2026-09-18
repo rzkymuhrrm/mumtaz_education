@@ -156,6 +156,7 @@ ul {
     background: none;
     font-size: 26px;
     cursor: pointer;
+    color: black;
 }
 
 
@@ -796,8 +797,12 @@ ul {
 .testimonial-user {
     display: flex;
     align-items: center;
-
     gap: 12px;
+}
+
+.testimonial-user p {
+    color: #9ca3af;
+    font-size: 12px;
 }
 
 .user-avatar {
