@@ -467,7 +467,7 @@ ul {
     width: fit-content;
     max-width: 350px;
     margin: 0 auto;
-    margin-left: -20px;
+    width: 100%;
 }
 
 .promo-decoration {
