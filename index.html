@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Landing Page</title>
+
+    <meta
+        name="description"
+        content="Landing page modern menggunakan HTML, CSS, dan JavaScript."
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#" class="logo">
+                Mumtaz <span>Education</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Toggle menu"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+
+                <!--
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                -->
+
+                <li>
+                    <a href="#features">Programs</a>
+                </li>
+
+                <li>
+                    <a href="#benefit">Benefits</a>
+                </li>
+
+                <li>
+                    <a href="#testimoni">Testimonials</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================= -->
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================= -->
+        <section class="hero" id="home">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <!--
+                    <span class="badge">
+                        🚀 Solusi Digital Modern
+                    </span>
+                    -->
+
+                    <h1>
+                        Bimbingan Belajar Online & Offline Terpercaya untuk
+                        <span>Mengembangkan Potensi Anak.</span>
+                    </h1>
+
+                    <!--
+                    <p>
+                        Template landing page modern, responsive,
+                        dan mudah dikembangkan menggunakan HTML,
+                        CSS, dan JavaScript.
+                    </p>
+                    -->
+
+                    <div class="hero-buttons">
+
+                        <a href="https://wa.me/6282292487492" target="_blank" class="btn-daftar btn btn-primary">
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path d="M20.52 3.48A11.85 11.85 0 0 0 12.08 0C5.52 0 .18 5.34.18 11.9c0 2.1.55 4.15 1.59 5.96L.1 24l6.28-1.64a11.9 11.9 0 0 0 5.69 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.46-8.43ZM12.08 21.8c-1.78 0-3.52-.48-5.04-1.39l-.36-.21-3.73.98.99-3.64-.23-.37a9.86 9.86 0 0 1-1.51-5.27c0-5.45 4.43-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.89 9.88Zm5.42-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.09 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+                            </svg>
+
+                            Daftar Sekarang
+                        </a>
+
+                        <a href="#features" class="btn btn-secondary">
+                            Lihat Program
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-card">
+                    <div class="card-container">
+                        <img src="assets/hero.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FEATURES / PROGRAM
+        ========================= -->
+        <section class="features section" id="features">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        Program Belajar
+                    </span>
+
+                    <h2>
+                        Pilih Programmu Sekarang Juga !!
+                    </h2>
+
+                    <p>
+                        Program pembelajaran yang disesuaikan dengan kebutuhan
+                        dan kemampuan setiap peserta didik.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-grid">
+
+                    <!-- Bahasa Inggris -->
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            👦
+                        </div>
+
+                        <h3>
+                            Kelas Bahasa Inggris
+                        </h3>
+
+                        <p>
+                            Belajar Bahasa Inggris secara menyenangkan untuk
+                            meningkatkan kemampuan berbicara, membaca, dan memahami
+                            Bahasa Inggris.
+                        </p>
+
+                        <a href="https://wa.me/6282292487492" target="_blank" class="btn-daftar btn btn-primary">
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path d="M20.52 3.48A11.85 11.85 0 0 0 12.08 0C5.52 0 .18 5.34.18 11.9c0 2.1.55 4.15 1.59 5.96L.1 24l6.28-1.64a11.9 11.9 0 0 0 5.69 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.46-8.43ZM12.08 21.8c-1.78 0-3.52-.48-5.04-1.39l-.36-.21-3.73.98.99-3.64-.23-.37a9.86 9.86 0 0 1-1.51-5.27c0-5.45 4.43-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.89 9.88Zm5.42-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.09 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+                            </svg>
+
+                            Daftar Sekarang
+                        </a>
+
+                    </article>
+
+
+                    <!-- Private Bahasa Inggris -->
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            👨‍🏫
+                        </div>
+
+                        <h3>
+                            Private Bahasa Inggris
+                        </h3>
+
+                        <p>
+                            Pembelajaran privat dengan materi dan metode yang
+                            dapat disesuaikan dengan kebutuhan peserta didik.
+                        </p>
+
+                        <a href="https://wa.me/6282292487492" target="_blank" class="btn-daftar btn btn-primary">
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path d="M20.52 3.48A11.85 11.85 0 0 0 12.08 0C5.52 0 .18 5.34.18 11.9c0 2.1.55 4.15 1.59 5.96L.1 24l6.28-1.64a11.9 11.9 0 0 0 5.69 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.46-8.43ZM12.08 21.8c-1.78 0-3.52-.48-5.04-1.39l-.36-.21-3.73.98.99-3.64-.23-.37a9.86 9.86 0 0 1-1.51-5.27c0-5.45 4.43-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.89 9.88Zm5.42-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.09 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+                            </svg>
+
+                            Daftar Sekarang
+                        </a>
+
+                    </article>
+
+
+                    <!-- Matematika -->
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            🔢
+                        </div>
+
+                        <h3>
+                            Matematika
+                        </h3>
+
+                        <p>
+                            Membantu memahami konsep matematika dengan cara yang
+                            sederhana, bertahap, dan mudah dipahami.
+                        </p>
+
+                        <a href="https://wa.me/6282292487492" target="_blank" class="btn-daftar btn btn-primary">
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path d="M20.52 3.48A11.85 11.85 0 0 0 12.08 0C5.52 0 .18 5.34.18 11.9c0 2.1.55 4.15 1.59 5.96L.1 24l6.28-1.64a11.9 11.9 0 0 0 5.69 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.46-8.43ZM12.08 21.8c-1.78 0-3.52-.48-5.04-1.39l-.36-.21-3.73.98.99-3.64-.23-.37a9.86 9.86 0 0 1-1.51-5.27c0-5.45 4.43-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.89 9.88Zm5.42-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.09 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+                            </svg>
+
+                            Daftar Sekarang
+                        </a>
+
+                    </article>
+
+
+                    <!-- Calistung -->
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            📚
+                        </div>
+
+                        <h3>
+                            Calistung
+                        </h3>
+
+                        <p>
+                            Program membaca, menulis, dan berhitung untuk membantu
+                            membangun kemampuan dasar anak sejak dini.
+                        </p>
+
+                        <a href="https://wa.me/6282292487492" target="_blank" class="btn-daftar btn btn-primary">
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path d="M20.52 3.48A11.85 11.85 0 0 0 12.08 0C5.52 0 .18 5.34.18 11.9c0 2.1.55 4.15 1.59 5.96L.1 24l6.28-1.64a11.9 11.9 0 0 0 5.69 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.46-8.43ZM12.08 21.8c-1.78 0-3.52-.48-5.04-1.39l-.36-.21-3.73.98.99-3.64-.23-.37a9.86 9.86 0 0 1-1.51-5.27c0-5.45 4.43-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.89 9.88Zm5.42-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.09 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+                            </svg>
+
+                            Daftar Sekarang
+                        </a>
+
+                    </article>
+
+
+                    <!-- Baca Tulis Al-Qur'an -->
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            📖
+                        </div>
+
+                        <h3>
+                            Baca Tulis Al-Qur'an
+                        </h3>
+
+                        <p>
+                            Pembelajaran Al-Qur'an secara
+                            bertahap dengan pendampingan yang sesuai kemampuan.
+                        </p>
+
+                        <a href="https://wa.me/6282292487492" target="_blank" class="btn-daftar btn btn-primary">
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path d="M20.52 3.48A11.85 11.85 0 0 0 12.08 0C5.52 0 .18 5.34.18 11.9c0 2.1.55 4.15 1.59 5.96L.1 24l6.28-1.64a11.9 11.9 0 0 0 5.69 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.46-8.43ZM12.08 21.8c-1.78 0-3.52-.48-5.04-1.39l-.36-.21-3.73.98.99-3.64-.23-.37a9.86 9.86 0 0 1-1.51-5.27c0-5.45 4.43-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.89 9.88Zm5.42-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.09 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+                            </svg>
+
+                            Daftar Sekarang
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROMO
+        ========================= -->
+        <section class="promo-section">
+
+            <div class="container">
+
+                <div class="promo-box">
+
+                    <div class="promo-content">
+
+                        <span class="promo-badge">
+                            🔥 PROMO TERBATAS
+                        </span>
+
+                        <h2>
+                            Ambil Promo Sekarang Juga!
+                        </h2>
+
+                        <p>
+                            Dapatkan kesempatan belajar dengan harga spesial
+                            sebelum penawaran berakhir.
+                        </p>
+
+                        <div class="promo-price">
+
+                            <span class="old-price">
+                                Rp199K
+                            </span>
+
+                            <span class="new-price">
+                                Rp99K
+                            </span>
+
+                        </div>
+
+                        <p class="promo-limit">
+                            Penawaran Terbatas
+                        </p>
+
+                        <a href="https://wa.me/6282292487492" target="_blank" class="btn-daftar btn btn-primary">
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path d="M20.52 3.48A11.85 11.85 0 0 0 12.08 0C5.52 0 .18 5.34.18 11.9c0 2.1.55 4.15 1.59 5.96L.1 24l6.28-1.64a11.9 11.9 0 0 0 5.69 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.46-8.43ZM12.08 21.8c-1.78 0-3.52-.48-5.04-1.39l-.36-.21-3.73.98.99-3.64-.23-.37a9.86 9.86 0 0 1-1.51-5.27c0-5.45 4.43-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.89 9.88Zm5.42-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.09 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+                            </svg>
+
+                            Daftar Sekarang
+                        </a>
+
+                    </div>
+
+
+                    <!--
+                    <div class="promo-decoration">
+
+                        <div class="discount-circle">
+                            <span>SUPER</span>
+                            <strong>HEMAT</strong>
+                        </div>
+
+                    </div>
+                    -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             BENEFIT
+        ========================= -->
+        <section class="benefit-section" id="benefit">
+
+            <div class="container">
+
+                <div class="benefit-header">
+
+                    <div class="section-heading">
+
+                        <span class="section-label">
+                            Benefit
+                        </span>
+
+                        <h2>
+                            Benefit yang Kamu Dapatkan
+                        </h2>
+
+                        <p>
+                            Nikmati berbagai fasilitas untuk menunjang pengalaman belajar.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Slider -->
+                <div class="benefit-slider" id="benefitSlider">
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+                            🎓
+                        </div>
+
+                        <h3>
+                            E-Sertifikat
+                        </h3>
+
+                    </div>
+
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+                            👨‍🏫
+                        </div>
+
+                        <h3>
+                            Tutor Berpengalaman
+                        </h3>
+
+                    </div>
+
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+                            💰
+                        </div>
+
+                        <h3>
+                            Biaya Terjangkau
+                        </h3>
+
+                    </div>
+
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+                            💬
+                        </div>
+
+                        <h3>
+                            Group Diskusi
+                        </h3>
+
+                    </div>
+
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+                            🌎
+                        </div>
+
+                        <h3>
+                            Kurikulum Internasional
+                        </h3>
+
+                    </div>
+
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+                            📚
+                        </div>
+
+                        <h3>
+                            Modul Belajar
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Navigation Button -->
+                <div class="slider-buttons">
+
+                    <button
+                        class="slider-btn"
+                        id="benefitPrev"
+                        aria-label="Previous"
+                    >
+                        ←
+                    </button>
+
+                    <button
+                        class="slider-btn"
+                        id="benefitNext"
+                        aria-label="Next"
+                    >
+                        →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TESTIMONI
+        ========================= -->
+        <section class="story-section" id="testimoni">
+
+            <div class="container">
+
+                <!-- Bagian Atas -->
+                <div class="story-grid">
+
+                    <!-- Kiri -->
+                    <div class="story-content">
+
+                        <span class="section-label">
+                            Cerita Kita
+                        </span>
+
+                        <h2>
+                            Kemajuan kecil
+                            <span>yang terasa besar.</span>
+                        </h2>
+
+                        <p>
+                            Setiap proses belajar punya cerita.
+                            Bersama tutor dan lingkungan belajar yang mendukung,
+                            setiap langkah kecil menjadi bagian dari perjalanan
+                            menuju perkembangan yang lebih baik.
+                        </p>
+
+                        <a href="https://wa.me/6282292487492" target="_blank" class="btn-daftar btn btn-primary">
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path d="M20.52 3.48A11.85 11.85 0 0 0 12.08 0C5.52 0 .18 5.34.18 11.9c0 2.1.55 4.15 1.59 5.96L.1 24l6.28-1.64a11.9 11.9 0 0 0 5.69 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.46-8.43ZM12.08 21.8c-1.78 0-3.52-.48-5.04-1.39l-.36-.21-3.73.98.99-3.64-.23-.37a9.86 9.86 0 0 1-1.51-5.27c0-5.45 4.43-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.89 9.88Zm5.42-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.09 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+                            </svg>
+
+                            Daftar Sekarang
+                        </a>
+
+                    </div>
+
+
+                    <!-- Kanan: Testimoni -->
+                    <div class="testimonial-wrapper">
+
+                        <!-- Tombol Carousel -->
+                        <button
+                            class="testimonial-btn testimonial-prev"
+                            id="testimonialPrev"
+                            aria-label="Testimoni sebelumnya"
+                        >
+                            ←
+                        </button>
+
+
+                        <div
+                            class="testimonial-slider"
+                            id="testimonialSlider"
+                        >
+
+                            <!-- Testimoni 1 -->
+                            <article class="testimonial-card">
+
+                                <div class="testimonial-stars">
+                                    ★★★★★
+                                </div>
+
+                                <p>
+                                    "Fathan sebelumnya cukup kesulitan memahami Matematika, terutama soal cerita. Setelah belajar di Mumtaz Education, sekarang alhamdulillah sudah lebih paham dan lebih percaya diri dalam mengerjakan soal. Tutor-nya sabar dan cara menjelaskannya mudah dipahami. Terima kasih Mumtaz Education."
+                                </p>
+
+                                <div class="testimonial-user">
+
+                                    <div>
+                                        <h4>Ibu Nurlaili S.</h4>
+                                        <h5>Kelas Matematika</h5>
+                                        <span>(Mama dari Fathan, Kelas 4 SD)</span>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- Testimoni 2 -->
+                            <article class="testimonial-card">
+
+                                <div class="testimonial-stars">
+                                    ★★★★★
+                                </div>
+
+                                <p>
+                                    "Anak saya jadi lebih percaya diri berbicara dalam Bahasa Inggris. Pengajarnya sangat sabar dan cara menjelaskannya mudah dipahami. Aisyah juga selalu semangat setiap jadwal belajar tiba. Terima kasih Mumtaz Education sudah membantu perkembangan anak saya."
+                                </p>
+
+                                <div class="testimonial-user">
+
+                                    <div>
+                                        <h4>Ibu Rina A. </h4>
+                                        <h5>Kelas Privat Bahasa Inggris</h5>
+                                        <span>(Mama dari Aisyah, Kelas 2 SD)</span>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- Testimoni 3 -->
+                            <article class="testimonial-card">
+
+                                <div class="testimonial-stars">
+                                    ★★★★★
+                                </div>
+
+                                <p>
+                                    "Sebelumnya Fathan cukup kesulitan memahami Matematika, terutama soal cerita. Setelah belajar di Mumtaz Education, dia mulai lebih memahami konsep dan lebih mandiri mengerjakan tugas sekolah. Tutornya sangat sabar dan cara mengajarnya mudah dipahami. Terima kasih Mumtaz Education."
+                                </p>
+
+                                <div class="testimonial-user">
+
+                                    <div>
+                                        <h4>Ibu Nurul H. </h4>
+                                        <h5>Kelas Matematika</h5>
+                                        <span>(Mama dari Fathan, Kelas 4 SD)</span>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- Testimoni 4 -->
+                            <article class="testimonial-card">
+
+                                <div class="testimonial-stars">
+                                    ★★★★★
+                                </div>
+
+                                <p>
+                                    "Saya senang karena pembelajarannya tidak membuat anak cepat bosan. Materinya disampaikan dengan cara yang menyenangkan dan sesuai usia. Kayla sekarang sudah mulai berani menggunakan kosakata Bahasa Inggris dalam kegiatan sehari-hari. Terima kasih Mumtaz Education."
+                                </p>
+
+                                <div class="testimonial-user">
+                                    <div>
+                                        <h4>Ibu Diah P.</h4>
+                                        <h5>Kelas Bahasa Inggris</h2>
+                                        <span>(Mama dari Kayla, Kelas 4 SD)</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+
+
+                        <button
+                            class="testimonial-btn testimonial-next"
+                            id="testimonialNext"
+                            aria-label="Testimoni berikutnya"
+                        >
+                            →
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Foto di bawah -->
+                <div class="story-image">
+
+                    <img
+                        src="assets/images/testimoni.jpeg"
+                        alt="Kegiatan belajar bersama"
+                    >
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FLOATING WHATSAPP
+    ========================= -->
+    <a
+        href="https://wa.me/6282292487492"
+        class="floating-whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat via WhatsApp"
+    >
+
+        <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+        >
+            <path d="M20.52 3.48A11.85 11.85 0 0 0 12.08 0
+                C5.52 0 .18 5.34.18 11.9c0 2.1.55 4.15 1.59 5.96L.1 24
+                l6.28-1.64a11.9 11.9 0 0 0 5.69 1.45h.01
+                c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.46-8.43ZM12.08 21.8
+                c-1.78 0-3.52-.48-5.04-1.39l-.36-.21-3.73.98
+                .99-3.64-.23-.37a9.86 9.86 0 0 1-1.51-5.27
+                c0-5.45 4.43-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9
+                a9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.89 9.88Zm5.42-7.4
+                c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15
+                -.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07
+                -.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.06
+                -.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52
+                .15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52
+                -.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57
+                c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49
+                0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.09 4.49
+                .71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12
+                .57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42
+                -.07-.12-.27-.2-.57-.35Z"
+            />
+        </svg>
+
+    </a>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+    <footer id="contact">
+
+        <!-- CTA Footer -->
+        <div class="footer-cta">
+
+            <div class="container">
+
+                <div class="footer-cta-content">
+
+                    <div>
+
+                        <span class="section-label">
+                            Mulai Belajar
+                        </span>
+
+                        <h2>
+                            Siap mulai perjalanan belajar?
+                        </h2>
+
+                        <p>
+                            Yuk, belajar bersama tutor berpengalaman
+                            dalam lingkungan yang nyaman dan menyenangkan.
+                        </p>
+
+                    </div>
+
+
+                    <a href="https://wa.me/6282292487492" target="_blank" class="btn-daftar btn btn-light">
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path d="M20.52 3.48A11.85 11.85 0 0 0 12.08 0C5.52 0 .18 5.34.18 11.9c0 2.1.55 4.15 1.59 5.96L.1 24l6.28-1.64a11.9 11.9 0 0 0 5.69 1.45h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.46-8.43ZM12.08 21.8c-1.78 0-3.52-.48-5.04-1.39l-.36-.21-3.73.98.99-3.64-.23-.37a9.86 9.86 0 0 1-1.51-5.27c0-5.45 4.43-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.89 9.88Zm5.42-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.09 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+                            </svg>
+
+                            Daftar Sekarang
+                        </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    ©Mumtaz Education.
+                    <!-- <span id="year"></span> -->
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
