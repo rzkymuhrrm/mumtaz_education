@@ -35,6 +35,27 @@ if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
 }
 
+// =========================
+// PROGRAM CAROUSEL
+// =========================
+const programSlider = document.getElementById("programSlider");
+const programPrev = document.getElementById("programPrev");
+const programNext = document.getElementById("programNext");
+
+programPrev.addEventListener("click", () => {
+    programSlider.scrollBy({
+        left: -364,
+        behavior: "smooth"
+    });
+});
+
+programNext.addEventListener("click", () => {
+    programSlider.scrollBy({
+        left: 364,
+        behavior: "smooth"
+    });
+});
+
 
 // =========================
 // BENEFIT CAROUSEL

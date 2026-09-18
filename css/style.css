@@ -73,6 +73,20 @@ ul {
    BUTTON
 ========================= */
 
+.btn-daftar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.btn-daftar svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -220,6 +234,12 @@ ul {
     gap: 12px;
 }
 
+.hero-buttons2 {
+    display: none;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
 
 /* =========================
    HERO IMAGE
@@ -247,62 +267,103 @@ ul {
 /* =========================
    PROGRAM BELAJAR
 ========================= */
-
 .features {
     background: #f9fafb;
 }
 
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.program-slider-wrapper {
+    position: relative;
+    min-width: 0;
+}
+
+.program-slider {
+    display: flex;
     gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding: 10px 5px 30px;
+    scrollbar-width: none;
 }
 
-.feature-card {
-    padding: 30px;
-    border: 1px solid #e5e7eb;
-    border-radius: 18px;
+.program-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* =========================
+   PROGRAM POSTER
+========================= */
+.program-poster {
+    flex: 0 0 340px;
+    overflow: hidden;
+    border-radius: 20px;
     background: #ffffff;
-    transition: all 0.3s ease;
-    cursor: pointer;
+    scroll-snap-align: start;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
 }
 
-.feature-card:hover {
-    transform: translateY(-6px);
-    border-color: #009927;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+.program-poster:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
 }
 
-.feature-icon {
-    width: 55px;
-    height: 55px;
+.program-poster img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   PROGRAM BUTTON
+========================= */
+.program-btn {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    width: 48px;
+    height: 48px;
     display: grid;
     place-items: center;
-    margin-bottom: 20px;
-    border-radius: 14px;
-    background: #eef2ff;
-    font-size: 26px;
-}
-
-.feature-card h3 {
-    margin-bottom: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #111827;
     font-size: 20px;
-}
-
-.feature-card p {
-    margin-bottom: 20px;
-    color: #6b7280;
-    font-size: 15px;
-}
-
-.feature-link {
-    color: #009927;
-    font-size: 14px;
     font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transition: all 0.25s ease;
 }
 
-.feature-link:hover {
-    color: #00661a;
+.program-prev {
+    left: -24px;
+    transform: translateY(-50%);
+}
+
+.program-next {
+    right: -24px;
+    transform: translateY(-50%);
+}
+
+.program-btn:hover {
+    background: #009927;
+    border-color: #009927;
+    color: #ffffff;
+}
+
+.program-prev:active,
+.program-next:active {
+    transform: translateY(-50%) scale(0.92);
+}
+
+#daftar-program-btn {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 
@@ -361,6 +422,7 @@ ul {
 
 .promo-price {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 15px;
     margin: 25px 0 5px;
@@ -368,7 +430,7 @@ ul {
 
 .old-price {
     color: #9ca3af;
-    font-size: 24px;
+    font-size: 35px;
     text-decoration: line-through;
 }
 
@@ -399,6 +461,14 @@ ul {
 /* =========================
    PROMO DECORATION
 ========================= */
+
+.img-promo {
+    display: block;
+    width: fit-content;
+    max-width: 350px;
+    margin: 0 auto;
+    /* margin-left: -20px; */
+}
 
 .promo-decoration {
     position: relative;
@@ -918,6 +988,188 @@ ul {
 
 
 /* =========================
+   DAFTAR SEKARANG
+========================= */
+.btn-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 22px;
+    font-weight: 700;
+    transition: 0.25s ease;
+    text-align: start;
+}
+
+.btn-register {
+    color: white;
+    background: #009927;
+}
+
+.btn-register:hover {
+    background: #00721c;
+    transform: translateY(-2px);
+}
+
+
+.register-section {
+    padding: 100px 0;
+    background: #ffffff
+}
+
+.register-content {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.register-image {
+    width: 50%;
+    max-width: 550px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.register-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.register-programs {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.register-item {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.register-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Nama program */
+.register-item h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #111827;
+}
+
+/* Tombol daftar */
+.register-item .btn-daftar {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 18px;
+    border-radius: 5px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+    .btn-daftar-dua {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-shrink: 0;
+    }
+
+    .btn-daftar-dua svg {
+        width: 15px;
+        height: 15px;
+        fill: currentColor;
+    }
+
+    .btn-dua {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 11px 14px;
+        border-radius: 10px;
+        font-weight: 700;
+        transition: 0.25s ease;
+        font-size: 15px;
+    }
+
+    .btn-primary-dua {
+        color: white;
+        background: #009927;
+    }
+
+    .btn-primary-dua:hover {
+        background: #00721c;
+        transform: translateY(-2px);
+    }
+
+    .btn-secondary-dua {
+        border: 1px solid #e5e7eb;
+        background: white;
+    }
+
+    .btn-secondary-dua:hover {
+        background: #f9fafb;
+        transform: translateY(-2px);
+    }
+
+    .register-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .register-image,
+    .register-programs {
+        width: 100%;
+    }
+
+    .register-programs {
+        gap: 30px;
+    }
+
+    .register-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .register-item h3 {
+        margin-top: 10px;
+    }
+
+    .btn-daftar {
+        width: auto;
+    }
+
+    .hero-buttons {
+        display: none;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero-buttons2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -80px;
+        gap: 12px;
+    }
+}
+
+
+/* =========================
    FOOTER
 ========================= */
 
@@ -1176,8 +1428,22 @@ footer {
 
 @media (max-width: 900px) {
 
-    .feature-grid {
-        grid-template-columns: repeat(2, 1fr);
+    /* Program */
+    .program-poster {
+        flex: 0 0 82vw;
+    }
+
+    .program-btn {
+        width: 42px;
+        height: 42px;
+    }
+
+    .program-prev {
+        left: -10px;
+    }
+
+    .program-next {
+        right: -10px;
     }
 
     .testimoni-top {
@@ -1210,6 +1476,10 @@ footer {
         height: 350px;
     }
 
+    /* Program Poster */
+    .program-poster {
+        flex: 0 0 300px;
+    }
 }
 
 
