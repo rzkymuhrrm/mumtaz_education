@@ -1361,67 +1361,6 @@ footer {
 
 }
 
-
-/* =========================
-   COMMENTED CODE
-========================= */
-
-/*
-.card-window {
-    width: 100%;
-    max-width: 470px;
-    overflow: hidden;
-
-    border: 1px solid #e5e7eb;
-    border-radius: 18px;
-
-    background: #111827;
-
-    box-shadow:
-        0 25px 60px rgba(0, 0, 0, 0.15);
-}
-
-.window-header {
-    display: flex;
-    gap: 7px;
-
-    padding: 14px;
-
-    background: #1f2937;
-}
-
-.window-header span {
-    width: 10px;
-    height: 10px;
-
-    display: block;
-
-    border-radius: 50%;
-
-    background: #6b7280;
-}
-
-.code-preview {
-    padding: 35px;
-
-    color: #d1d5db;
-
-    font-family: monospace;
-    font-size: 15px;
-
-    line-height: 2;
-}
-
-.code-preview span {
-    color: #a5b4fc;
-}
-
-.indent {
-    padding-left: 25px;
-}
-*/
-
-
 /* =========================
    RESPONSIVE
 ========================= */
