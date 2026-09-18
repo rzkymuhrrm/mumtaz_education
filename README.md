@@ -2,7 +2,7 @@
 
 Landing page untuk Mumtaz Education yang dirancang sebagai media informasi program belajar serta sarana pendaftaran peserta didik.
 
-Website ini dibuat menggunakan HTML, CSS, dan JavaScript tanpa framework tambahan.
+Website ini dibuat menggunakan HTML, CSS, dan JavaScript tanpa framework2 tambahan.
 
 ## ✨ Features
 
