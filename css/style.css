@@ -103,7 +103,7 @@ h1, h2 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 13px 22px;
+    padding: 10px 20px;
     border-radius: 10px;
     font-weight: 700;
     transition: 0.25s ease;
@@ -258,8 +258,6 @@ h1, h2 {
 
 .hero-buttons2 {
     display: none;
-    flex-wrap: wrap;
-    gap: 12px;
 }
 
 
@@ -1151,7 +1149,17 @@ h1, h2 {
 ========================= */
 @media (max-width: 768px) {
     .hero h1 {
-        text-align: justify;
+        text-align: center;
+    }
+    .hero-buttons {
+        display: none;
+    }
+    .hero-buttons2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: -80px;
+        gap: 12px;
     }
     .btn-daftar-dua {
         display: inline-flex;
@@ -1175,7 +1183,7 @@ h1, h2 {
         border-radius: 10px;
         font-weight: 700;
         transition: 0.25s ease;
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .btn-primary-dua {
