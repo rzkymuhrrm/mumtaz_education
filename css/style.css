@@ -54,11 +54,10 @@ h1, h2 {
     margin-inline: auto;
 }
 
-
 .section-heading {
-    max-width: 650px;
+    width: 100%;
     margin: 0 auto 50px;
-    text-align: center;
+    text-align: left;
 }
 
 .section-label {
@@ -68,6 +67,7 @@ h1, h2 {
     color: var(--primary-color);
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .section-heading h2 {
@@ -204,13 +204,14 @@ h1, h2 {
     min-height: calc(100vh - 70px);
     display: flex;
     align-items: center;
-    background: linear-gradient(
+    /* background: linear-gradient(
         to bottom,
         #ffffff 0%,
         #e9ebff 20%,
         #e9ebff 60%,
         #ffffff 100%
-    );
+    ); */
+    margin-bottom: -100px;
 }
 
 .hero-content {
@@ -288,7 +289,7 @@ h1, h2 {
    PROGRAM BELAJAR
 ========================= */
 .features {
-    background: #f9fafb;
+    background: #f9fafb; 
     padding-top: 100px;
 }
 
@@ -393,7 +394,7 @@ h1, h2 {
 ========================= */
 
 .promo-section {
-    padding: 80px 0;
+    padding: 100px;
     background: #f9fafb;
 }
 
@@ -562,9 +563,10 @@ h1, h2 {
 ========================= */
 
 .benefit-section {
-    padding: 100px 0;
+    padding-top: 100px;
     background: #ffffff;
     overflow: hidden;
+    text-align: center;
 }
 
 .benefit-header {
@@ -584,14 +586,10 @@ h1, h2 {
 .benefit-slider {
     display: flex;
     gap: 20px;
-
     overflow-x: auto;
-
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-
     padding: 10px 5px 25px;
-
     scrollbar-width: none;
 }
 
@@ -601,33 +599,23 @@ h1, h2 {
 
 .benefit-card {
     flex: 0 0 250px;
-
     min-height: 180px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     gap: 18px;
-
     padding: 30px 20px;
-
     border: 1px solid #e5e7eb;
     border-radius: 20px;
-
     background: #ffffff;
-
     scroll-snap-align: start;
-
     transition: all 0.3s ease;
 }
 
 .benefit-card:hover {
     transform: translateY(-7px);
-
     border-color: var(--primary-color);
-
     box-shadow:
         0 15px 35px rgba(0, 0, 0, 0.08);
 }
@@ -1007,7 +995,7 @@ h1, h2 {
 
 
 .register-section {
-    padding: 100px 0;
+    padding-top: 40px;
     background: #ffffff
 }
 
@@ -1488,6 +1476,7 @@ footer {
 
     .story-content {
         max-width: 650px;
+        text-align: center;
     }
 
     .testimonial-card {
@@ -1567,6 +1556,11 @@ footer {
 
 
     /* Program */
+    .section-heading {
+        max-width: 650px;
+        margin: 0 auto 50px;
+        text-align: center;
+    }
 
     .feature-grid {
         grid-template-columns: 1fr;
@@ -1578,12 +1572,14 @@ footer {
     .benefit-header {
         align-items: flex-start;
         flex-direction: column;
+        text-align: center;
     }
 
     .benefit-header .section-heading {
-        text-align: left;
+        margin: 0;
+        text-align: center;
     }
-
+    
     .slider-buttons {
         align-self: flex-end;
     }
@@ -1597,7 +1593,7 @@ footer {
     /* Promo */
 
     .promo-section {
-        padding: 60px 0;
+        padding: 100px 0;
     }
 
     .promo-box {
@@ -1696,7 +1692,7 @@ footer {
     /* Story */
 
     .story-section {
-        padding: 70px 0;
+        padding: 90px 0;
     }
 
     .testimonial-card {
