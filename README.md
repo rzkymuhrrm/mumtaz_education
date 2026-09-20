@@ -1,8 +1,8 @@
 # Mumtaz Education
 
-Landing page untuk Mumtaz Education yang dirancang sebagai media informasi program belajar serta sarana pendaftaran peserta didik.
+A landing page for Mumtaz Education designed to provide information about study programs and serve as a student registration portal.
 
-Website ini dibuat menggunakan HTML, CSS, dan JavaScript tanpa framework2 tambahan.
+This website was built using HTML, CSS, and JavaScript without any additional frameworks.
 
 ## ✨ Features
 
@@ -10,23 +10,23 @@ Website ini dibuat menggunakan HTML, CSS, dan JavaScript tanpa framework2 tambah
 - Sticky navigation bar
 - Mobile navigation menu
 - Hero section
-- Program belajar
+- Study programs
 - Promo section
-- Benefit slider
-- Testimonial slider
-- CTA pendaftaran
+- Benefits slider
+- Testimonials slider
+- Registration CTA
 - Floating WhatsApp button
-- Responsive layout untuk desktop, tablet, dan mobile
+- Responsive layout for desktop, tablet, and mobile
 
 ## 📚 Programs
 
-Beberapa program yang ditampilkan pada website:
+Some of the programs featured on the website:
 
-- Kelas Bahasa Inggris
-- Private Bahasa Inggris
-- Matematika
-- Calistung
-- Baca Tulis Al-Qur'an
+- English Classes
+- Private English Lessons
+- Mathematics
+- Basic Literacy & Numeracy (Calistung)
+- Quran Reading & Writing
 
 ## 🛠️ Tech Stack
 
@@ -53,3 +53,4 @@ mumtaz-education/
     ├── hero.png
     └── images/
         └── testimoni.jpeg
+```

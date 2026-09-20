@@ -131,6 +131,10 @@
        HERO
     ========================= */
 
+    .logo div{
+        font-size: 18px;
+    }
+
     .hero {
         padding: 70px 0;
     }
