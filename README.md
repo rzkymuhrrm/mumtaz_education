@@ -55,4 +55,4 @@ mumtaz-education/
         └── testimoni.jpeg
 ```
 
-[original link](mumtazeducation.github.io/)
+[original link](https://mumtazeducation.github.io/)
