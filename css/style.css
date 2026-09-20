@@ -1116,7 +1116,7 @@ h1, h2 {
 
 
 .register-section {
-    padding-top: 40px;
+    padding-top: 100px;
     background: #ffffff;
 }
 
@@ -1127,10 +1127,11 @@ h1, h2 {
 }
 
 .register-image {
+    position: relative;
     background-color: white;
     width: 50%;
     max-width: 550px;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 25px;
 }
 
@@ -1251,6 +1252,110 @@ h1, h2 {
 
 .register-item:hover .register-whatsapp {
     transform: scale(1.08);
+}
+
+/* floating */
+/* Floating Callout Text Component */
+.callout-badge {
+    position: absolute;
+    cursor: pointer;
+    top: -130px;
+    left: 0px;
+    z-index: 10;
+    transform: rotate(-6deg);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+
+    animation: floatAnimation 2.5s ease-in-out infinite;
+}
+
+/* 1. Definisi Gerakan Naik Turun (Floating) */
+@keyframes floatAnimation {
+  0% {
+    transform: rotate(-6deg) translateY(0px); /* Posisi awal */
+  }
+  50% {
+    transform: rotate(-6deg) translateY(-8px);/* Bergerak ke atas 8px */
+  }
+  100% {
+    transform: rotate(-6deg) translateY(0px); /* Kembali ke posisi awal */
+  }
+}
+
+/* Baris 1: Klik Tombol */
+.row-1 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+    padding-left: 20px;
+}
+
+/* Baris 2: Whatsapp + Icon + dan */
+.row-2 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.badge-wa {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 18px;
+    padding: 4px 14px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.wa-icon-small {
+    width: 18px;
+    height: 18px;
+    fill: #ffffff;
+}
+
+.text-dan {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+/* Baris 3: Amankan Slot Belajar */
+.badge-slot {
+    font-weight: 800;
+    font-size: 17px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    white-space: nowrap;
+
+    background-color: var(--primary-color);
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Baris 4: Anak Anda! + Underline Curve */
+.row-4 {
+    position: relative;
+    margin-left: 30px;
+}
+
+.text-anak {
+    font-size: 22px;
+    font-weight: 900;
+    color: #0f172a;
+}
+
+.underline-svg {
+    position: absolute;
+    bottom: -8px;
+    left: -10%;
+    width: 120%;
+    height: 12px;
 }
 
 /* =========================
