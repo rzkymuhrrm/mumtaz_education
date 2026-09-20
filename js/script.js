@@ -89,34 +89,57 @@ benefitPrev.addEventListener("click", () => {
 // =========================
 
 const testimonialSlider =
-    document.getElementById("testimonialSlider");
+document.getElementById("testimonialSlider");
 
 const testimonialPrev =
-    document.getElementById("testimonialPrev");
+document.getElementById("testimonialPrev");
 
 const testimonialNext =
-    document.getElementById("testimonialNext");
+document.getElementById("testimonialNext");
 
 
 // Scroll ke kiri
 
 testimonialPrev.addEventListener("click", () => {
-
+    
     testimonialSlider.scrollBy({
         left: -360,
         behavior: "smooth"
     });
-
+    
 });
 
 
 // Scroll ke kanan
 
 testimonialNext.addEventListener("click", () => {
-
+    
     testimonialSlider.scrollBy({
         left: 360,
         behavior: "smooth"
     });
+    
+});
 
+
+// =========================
+// TESTIMONIAL CAROUSEL
+// =========================
+
+const testimoniSlider = document.getElementById("testimoniSlider");
+const testimoniPrev = document.getElementById("testimoniPrev");
+const testimoniNext = document.getElementById("testimoniNext");
+
+testimoniPrev.addEventListener("click", () => {
+    testimoniSlider.scrollBy({
+        left: -364,
+        behavior: "smooth"
+    });
+});
+
+testimoniNext.addEventListener("click", () => {
+    testimoniSlider.scrollBy({
+        left: 364,
+        behavior: "smooth"
+    });
 });

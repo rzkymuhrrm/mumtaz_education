@@ -138,7 +138,7 @@ h1, h2 {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: #ffff;
+    background: #ffffff;
     border-bottom: 1px solid #f0f0f0;
     backdrop-filter: blur(10px);
 }
@@ -289,7 +289,7 @@ h1, h2 {
    PROGRAM BELAJAR
 ========================= */
 .features {
-    background: #f9fafb; 
+    background: #f9fafb;
     padding-top: 100px;
 }
 
@@ -486,10 +486,9 @@ h1, h2 {
 
 .img-promo {
     display: block;
-    width: fit-content;
+    width: 100%;
     max-width: 350px;
     margin: 0 auto;
-    width: 100%;
 }
 
 .promo-decoration {
@@ -688,6 +687,25 @@ h1, h2 {
    TESTIMONI
 ========================= */
 
+.testimoni-btn {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #111827;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transition: all 0.25s ease;
+}
+
 .testimoni-section {
     padding: 100px 0;
     background: #f9fafb;
@@ -757,8 +775,111 @@ h1, h2 {
 }
 
 /* =========================
-   TESTIMONIAL
+   testimoni BELAJAR
 ========================= */
+.features {
+    background: #f9fafb;
+    padding-top: 100px;
+}
+
+.testimoni-slider-wrapper {
+    position: relative;
+    min-width: 0;
+}
+
+.testimoni-slider {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding: 10px 5px 30px;
+    scrollbar-width: none;
+    /* background-color: saddlebrown; */
+    justify-content: space-around;
+}
+
+.testimoni-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* =========================
+   testimoni POSTER
+========================= */
+.testimoni-poster {
+    flex: 0 0 340px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #ffffff;
+    scroll-snap-align: start;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.testimoni-poster:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.testimoni-poster img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* =========================
+   testimoni BUTTON
+========================= */
+.testimoni-btn {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #111827;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transition: all 0.25s ease;
+}
+
+.testimoni-prev {
+    left: -24px;
+    transform: translateY(-50%);
+}
+
+.testimoni-next {
+    right: -24px;
+    transform: translateY(-50%);
+}
+
+.testimoni-btn:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.testimoni-prev:active,
+.testimoni-next:active {
+    transform: translateY(-50%) scale(0.92);
+}
+
+#daftar-testimoni-btn {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*  */
 
 .testimonial-wrapper {
     position: relative;
@@ -996,7 +1117,7 @@ h1, h2 {
 
 .register-section {
     padding-top: 40px;
-    background: #ffffff
+    background: #ffffff;
 }
 
 .register-content {
@@ -1131,119 +1252,6 @@ h1, h2 {
 .register-item:hover .register-whatsapp {
     transform: scale(1.08);
 }
-
-/* =========================
-   MOBILE
-========================= */
-@media (max-width: 768px) {
-    .hero h1 {
-        text-align: center;
-    }
-    .hero-buttons {
-        display: none;
-    }
-    .hero-buttons2 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: -80px;
-        gap: 12px;
-    }
-    .btn-daftar-dua {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        flex-shrink: 0;
-    }
-
-    .btn-daftar-dua svg {
-        width: 15px;
-        height: 15px;
-        fill: currentColor;
-    }
-
-    .btn-dua {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 11px 14px;
-        border-radius: 10px;
-        font-weight: 700;
-        transition: 0.25s ease;
-        font-size: 13px;
-    }
-
-    .btn-primary-dua {
-        color: white;
-        background: var(--primary-color);
-    }
-
-    .btn-primary-dua:hover {
-        background: var(--secondary-color);
-        transform: translateY(-2px);
-    }
-
-    .btn-secondary-dua {
-        border: 1px solid #e5e7eb;
-        background: white;
-    }
-
-    .btn-secondary-dua:hover {
-        background: #f9fafb;
-        transform: translateY(-2px);
-    }
-
-    .register-content {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .register-image,
-    .register-programs {
-        width: 100%;
-    }
-
-    .register-image {
-        margin-bottom: -40px;
-    }
-
-    .register-programs {
-        gap: 12px;
-    }
-
-    .register-item {
-        padding: 15px;
-        gap: 13px;
-        border-radius: 16px;
-    }
-
-    .register-icon {
-        width: 46px;
-        height: 46px;
-        border-radius: 12px;
-    }
-
-    .register-icon svg {
-        width: 22px;
-        height: 22px;
-    }
-
-    .register-info h3 {
-        font-size: 15px;
-    }
-
-    .register-info p {
-        font-size: 12px;
-    }
-
-    .register-arrow {
-        width: 32px;
-        height: 32px;
-        font-size: 18px;
-    }
-}
-
 
 /* =========================
    FOOTER
@@ -1437,321 +1445,7 @@ footer {
 
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 900px) {
-
-    /* Program */
-    .program-poster {
-        flex: 0 0 82vw;
-    }
-
-    .program-btn {
-        width: 42px;
-        height: 42px;
-    }
-
-    .program-prev {
-        left: -10px;
-    }
-
-    .program-next {
-        right: -10px;
-    }
-
-    .testimoni-top {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .testimoni-intro {
-        max-width: 650px;
-    }
-
-    .comment-card {
-        flex-basis: 330px;
-    }
-
-    .story-content {
-        max-width: 650px;
-        text-align: center;
-    }
-
-    .testimonial-card {
-        flex: 0 0 320px;
-    }
-
-    .story-image {
-        height: 350px;
-    }
-
-    /* Program Poster */
-    .program-poster {
-        flex: 0 0 300px;
-    }
-}
-
-
-@media (max-width: 768px) {
-
-    .section {
-        padding: 70px 0;
-    }
-
-
-    /* Navbar */
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-menu {
-        position: absolute;
-
-        top: 70px;
-        left: 0;
-
-        width: 100%;
-
-        display: none;
-
-        flex-direction: column;
-        align-items: flex-start;
-
-        gap: 0;
-
-        padding: 10px 5%;
-
-        border-bottom: 1px solid #e5e7eb;
-
-        background: white;
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .nav-menu li {
-        width: 100%;
-    }
-
-    .nav-menu a {
-        display: block;
-        padding: 14px 0;
-    }
-
-
-    /* Hero */
-
-    .hero {
-        padding: 70px 0;
-    }
-
-    .hero-content {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-
-
-    /* Program */
-    .section-heading {
-        max-width: 650px;
-        margin: 0 auto 50px;
-        text-align: center;
-    }
-
-    .feature-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* Benefit */
-
-    .benefit-header {
-        align-items: flex-start;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .benefit-header .section-heading {
-        margin: 0;
-        text-align: center;
-    }
-    
-    .slider-buttons {
-        align-self: flex-end;
-    }
-
-    .benefit-card {
-        flex: 0 0 220px;
-        min-height: 165px;
-    }
-
-
-    /* Promo */
-
-    .promo-section {
-        padding: 100px 0;
-    }
-
-    .promo-box {
-        flex-direction: column;
-        align-items: flex-start;
-
-        padding: 35px 25px;
-    }
-
-    .promo-decoration {
-        align-self: center;
-    }
-
-    .discount-circle {
-        width: 150px;
-        height: 150px;
-    }
-
-    .discount-circle strong {
-        font-size: 42px;
-    }
-
-    .new-price {
-        font-size: 44px;
-    }
-
-
-    /* Footer */
-
-    .footer-cta {
-        padding: 65px 0;
-    }
-
-    .footer-cta-content {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-    }
-
-    .footer-cta h2 {
-        letter-spacing: -1px;
-    }
-
-    .footer-cta .btn-light {
-        width: 100%;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    /* Benefit */
-
-    .benefit-slider {
-        margin-right: -5%;
-        padding-right: 5%;
-    }
-
-
-    /* Testimoni */
-
-    .testimoni-section {
-        padding: 70px 0;
-    }
-
-    .testimoni-intro h2 {
-        font-size: 40px;
-    }
-
-    .comment-slider {
-        padding-right: 55px;
-    }
-
-    .comment-card {
-        flex: 0 0 85vw;
-        min-height: 280px;
-        padding: 25px;
-    }
-
-    .comment-navigation {
-        right: 0;
-    }
-
-    .photo-header {
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    .photo-card {
-        flex: 0 0 75vw;
-        height: 300px;
-    }
-
-
-    /* Story */
-
-    .story-section {
-        padding: 90px 0;
-    }
-
-    .testimonial-card {
-        flex: 0 0 285px;
-        min-height: 260px;
-        padding: 25px;
-    }
-
-    .testimonial-btn {
-        width: 42px;
-        height: 42px;
-    }
-
-    .testimonial-prev {
-        left: -10px;
-    }
-
-    .testimonial-next {
-        right: -10px;
-    }
-
-    .story-image {
-        height: 260px;
-        margin-top: 50px;
-        border-radius: 18px;
-    }
-
-
-    /* WhatsApp */
-
-    .floating-whatsapp {
-        right: 18px;
-        bottom: 18px;
-
-        width: 54px;
-        height: 54px;
-    }
-
-    .floating-whatsapp svg {
-        width: 29px;
-        height: 29px;
-    }
-
-}
-
 .whatsapp-icon {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-    flex-shrink: 0;
-}
-
-.btn-daftar {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.btn-daftar svg {
     width: 20px;
     height: 20px;
     fill: currentColor;
